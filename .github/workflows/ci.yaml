@@ -80,6 +80,7 @@ jobs:
           cd payment-service
           go build -v .
           go test -v .
+
       - name: Build and Test Shipping Service
         run: |
           cd shipping-service
