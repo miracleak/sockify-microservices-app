@@ -60,9 +60,9 @@ jobs:
       - name: Build and Test User Service
         run: |
           cd user-service
-          kubectl apply -f user-service-deployment.yaml
-          # Add your deployment commands here
-
+          go build -v .
+          go test -v .
+          
       - name: Build and Test Product Service
         run: |
           cd product-service
