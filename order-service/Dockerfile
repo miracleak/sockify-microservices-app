@@ -2,7 +2,7 @@ FROM golang:1.20
 
 WORKDIR /order-service
 
-COPY /main.go .
+COPY /main .
 
 RUN go mod init github.com/miracleak/sockify-microservices-app
 
@@ -12,4 +12,4 @@ RUN go build main.go
 
 EXPOSE 8080
 
-CMD ["./main.go"]
+CMD ["./main"]
