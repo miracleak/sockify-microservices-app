@@ -12,4 +12,4 @@ RUN go build main.go
 
 EXPOSE 8080
 
-CMD ["/order-service/main.go"]
+CMD ["./main.go"]
