@@ -2,7 +2,7 @@ FROM golang:1.20
 
 WORKDIR /order-service
 
-COPY /main .
+COPY /main.go .
 
 RUN go mod init github.com/miracleak/sockify-microservices-app
 
